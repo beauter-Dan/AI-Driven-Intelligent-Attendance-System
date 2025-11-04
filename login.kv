@@ -1,0 +1,25 @@
+<LoginScreen>:
+    name: "login"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 30
+        spacing: 20
+
+        Label:
+            text: "AI Attendance Login"
+            font_size: 28
+
+        TextInput:
+            id: reg_id
+            hint_text: "Registration ID"
+            multiline: False
+
+        Button:
+            text: "Sign In (Face Recognition)"
+            on_release:
+                app.root.current = "dashboard"
+
+        Button:
+            text: "Create Account"
+            on_release:
+                app.root.current = "signup"

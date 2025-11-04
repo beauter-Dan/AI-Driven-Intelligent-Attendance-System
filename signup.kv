@@ -1,0 +1,37 @@
+<SignupScreen>:
+    name: "signup"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 30
+        spacing: 15
+
+        Label:
+            text: "Register New User"
+            font_size: 28
+
+        TextInput:
+            id: name
+            hint_text: "Full Name"
+
+        TextInput:
+            id: reg_id
+            hint_text: "Registration ID"
+
+        TextInput:
+            id: course
+            hint_text: "Course Name"
+
+        Button:
+            text: "Capture Face"
+            on_release:
+                print("Capture face logic goes here")
+
+        Button:
+            text: "Register"
+            on_release:
+                app.root.current = "login"
+
+        Button:
+            text: "Back"
+            on_release:
+                app.root.current = "login"
